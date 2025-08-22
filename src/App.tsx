@@ -23,9 +23,9 @@ const App: React.FC = () => {
         </AppShell.Header>
         <AppShell.Main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/personal-website/" element={<Home />} />
+            <Route path="/personal-website/about" element={<About />} />
+            <Route path="/personal-website/blog" element={<Blog />} />
           </Routes>
         </AppShell.Main>
       </AppShell>

@@ -18,9 +18,9 @@ const Navbar: React.FC = () => {
   const isActiveLink = (path: string) => location.pathname === path;
 
   const navItems = [
-    { link: '/', label: 'Home' },
-    { link: '/about', label: 'About' },
-    { link: '/blog', label: 'Blog' },
+    { link: '/personal-website/', label: 'Home' },
+    { link: '/personal-website/about', label: 'About' },
+    { link: '/personal-website/blog', label: 'Blog' },
   ];
 
   return (
