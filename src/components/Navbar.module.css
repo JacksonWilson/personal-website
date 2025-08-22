@@ -1,0 +1,50 @@
+.navbar {
+  height: 100%;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--mantine-color-gray-3);
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  
+  /* Mobile layout: logo left, burger right */
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "logo burger";
+}
+
+/* Desktop layout: logo left, nav center, empty right */
+@media (min-width: 48em) {
+  .navbar {
+    grid-template-columns: minmax(200px, 1fr) auto minmax(200px, 1fr);
+    grid-template-areas: "logo nav .";
+  }
+}
+
+.logo {
+  text-decoration: none;
+  background: linear-gradient(45deg, var(--mantine-color-blue-6), var(--mantine-color-violet-6));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  grid-area: logo;
+  justify-self: start;
+}
+
+.navigation {
+  grid-area: nav;
+  justify-self: center;
+}
+
+.navItem {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.burgerContainer {
+  grid-area: burger;
+  justify-self: end;
+}
+
+.mobileNavItem {
+  border-radius: 8px;
+}

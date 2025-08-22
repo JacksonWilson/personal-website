@@ -1,4 +1,54 @@
-# React + TypeScript + Vite
+# Personal Website
+
+A personal website built with React, TypeScript, and Vite.
+
+## Project Structure
+
+### Pages Structure
+
+The `src/pages` directory contains all page components, organized as follows:
+
+```text
+src/pages/
+├── Home/
+│   ├── index.tsx          # Main Home page component
+│   └── components/        # Components specific to the Home page
+├── About/
+│   ├── index.tsx          # Main About page component
+│   └── components/        # Components specific to the About page
+└── Blog/
+    ├── index.tsx          # Main Blog page component
+    └── components/        # Components specific to the Blog page
+```
+
+### Global Components
+
+The `src/components` directory contains components that are used across multiple pages:
+
+```text
+src/components/
+└── Navbar.tsx             # Navigation component used on all pages
+```
+
+### Usage Guidelines
+
+- **Page Components**: Place in `src/pages/[PageName]/index.tsx`
+- **Page-specific Components**: Place in `src/pages/[PageName]/components/`
+- **Global Components**: Place in `src/components/`
+
+This structure keeps page-specific components isolated while making global components easily accessible throughout the application.
+
+## Development
+
+This project uses React + TypeScript + Vite for fast development and building.
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+
+## Technical Setup
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
